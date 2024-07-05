@@ -1,2 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
 
+body{
+    font-family: "Montserrat", sans-serif;
+   
+}
+
+/* Selectores de tipo: es el nombre de la etiqueta ---- Selector universal: 
+(todos los elementos HTML)--- Selector de clases:(.seguido del nombre de la clase)----
+--- Selecto ID: #(seguido del nombre del ID)*/
+.encabezado section{
+    background-color:chartreuse;
+     padding: 10px 15px; 
+}
+.encabezado img{
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.encabezado nav{
+    background-color: black;
+    color: white;
+    display: flex;  /*poner en fila*/
+    /* justify-content: space-evenly; que sea desplegable */
+    
+}
+.encabezado a{
+    color: white;
+    text-decoration: none; /*quitar la decoracion de los link o color de los url*/
+}
+
+.menu-desplegable li{
+    padding: 10px;
+    width: 200pt;
+    font-size: 12px;
+    background-color: black;
+}
+.menu-desplegable div{
+    display: none;
+    position: absolute;
+}
+
+.encabezado ul, .encabezado a{
+    padding: 10px;
+}
+.menu-desplegable span, .encabezado a{
+    /* MAYUSCULAS */
+    text-transform: uppercase;
+}
+.menu-desplegable:hover{
+    cursor: pointer;
+    font-weight: 800;
+    /* para que cambie los iconos cuando se acerca el cursor */
+}
+.menu-desplegable:hover div{
+    display: block; 
+    /* para que no aparzque los iconos hasta que coloquemos el cursor */
+}
 
